@@ -1,19 +1,1 @@
-import csv
-import json
 
-input_file = "konyvtar.csv"
-output_file = "konyvtar.json"
-
-books = []
-
-with open(input_file, "r", encoding="utf-8") as f:
-    reader = csv.DictReader(f)
-    for row in reader:
-            row["kiadas ev"] = int(row["kiadas ev"])
-        except ValueError:
-            pass
-        books.append(row)
-
-with open(output_file, "w", encoding="utf-8") as f:
-    json.dump(books, f, ensure_ascii=False, indent=4)
-print (file)
