@@ -1,8 +1,8 @@
 import csv
 import json
 
-input_file = "konyv.csv"
-output_file = "konyv.json"
+input_file = "konyvtar.csv"
+output_file = "konyvtar.json"
 
 books = []
 
